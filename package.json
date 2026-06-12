@@ -12,5 +12,15 @@
   "bugs": {
     "url": "https://github.com/wesbos/beginner-javascript/issues"
   },
-  "homepage": "https://github.com/wesbos/beginner-javascript#readme"
+  "homepage": "https://github.com/wesbos/beginner-javascript#readme",
+  "dependencies": {
+    "eslint-config-wesbos": "^4.3.2"
+  },
+  "eslintConfig": {
+    "extends": ["wesbos"]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
 }
